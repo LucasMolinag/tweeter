@@ -1,0 +1,52 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 30px;
+}
+
+button{
+  display: flex;
+  color: white;
+  background-color: #4056A1;
+  font-family: "bungee";
+}
+
+.counter{
+  font-family: "bungee";
+  display: flex;
+}
+
+.counter.invalid {
+  color: red;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+textarea{
+  background-color: #f4f1ec;
+  border-style: solid;
+  border-top-color: #f4f1ec;
+  border-right-color: #f4f1ec;
+  border-bottom-color: black ;
+  border-left-color: #f4f1ec;
+  border-bottom-width: 3px ;
+  margin-bottom: 0.5em;
+}
+
+section {
+  margin-bottom: 3em;
+}
