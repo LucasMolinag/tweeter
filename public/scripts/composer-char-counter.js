@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $(".new-tweet textarea").on("input", function() {
-    var textareaValue = $(this).val();
-    var charactersLeft = 140 - textareaValue.length;
+    let textareaValue = $(this).val();
+    let charactersLeft = 140 - textareaValue.length;
     console.log(charactersLeft);
 
-    var counterElement = $(this).closest('.new-tweet').find(".counter");
+    let counterElement = $(this).closest('.new-tweet').find(".counter");
 
     counterElement.text(charactersLeft);
 

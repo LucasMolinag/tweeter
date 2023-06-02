@@ -30,7 +30,7 @@ body {
 
 main {
   display: flex;
-  width: 90%;
+  width: 100%;
   align-items: center;
   background-color: #f4f1ec;
 }
@@ -55,8 +55,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  color: grey;
+  color: white;
 }
 
 h3 {
@@ -74,6 +73,25 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  font-size: 24px;
+  color: grey;
+}
+
+h6 {
+  font-size: 24px;
+  color: white;
+  margin: 10px;
+  background-color: red;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 footer {
   display: flex;
   justify-content: space-between;  
@@ -86,4 +104,44 @@ i {
 
 i:hover {
   color: orange;
+}
+
+label {
+  margin-top: 20px;
+}
+
+#tweets-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+    flex-direction: row;
+  }
+  .new-tweet {
+    margin-top: 5em;
+  }
+  .user-img {
+    padding: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 5em;
+    background-color: #54b0b3;
+    background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
+  }
+  #profile-container {
+    position: absolute;
+  }
+  #name-container {
+    position: relative;
+    left: 0%;
+    top: 15%;
+  }
 }

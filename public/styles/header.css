@@ -17,4 +17,26 @@ img {
 .tweeted-user {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .user-header {
+    background-color: #f4f1ec;
+    background-image: none;
+  }
 }

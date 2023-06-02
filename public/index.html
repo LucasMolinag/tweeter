@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Disable Viewport Zooming -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -14,6 +17,9 @@
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Timeago -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -40,11 +46,11 @@
     </nav>
 
     <header class="user-header">
-      <div>
-          <img class="img" src="/images/profile-hex.png"> 
+      <div id="profile-container">
+          <img class="user-img" src="/images/profile-hex.png"> 
       </div>
       <br>
-      <div>
+      <div id="name-container">
           <h2><b>Lucas</b> Molina</h2>
       </div>
   </header>
@@ -53,33 +59,20 @@
     <main class="container">
 
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <h6 hidden id="error-message"></h6>
         <form>
           <label for="tweet-text"><b>What are you humming about?</b></label>
           <textarea name="text" id="tweet-text"></textarea>
+          <!-- This section contains individual tweets -->
           <div class="tweet-button">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-      <container>
-        <article>
-          <header class="tweeted-user">
-            <h1>Newton</h1>
-            <h2>@SirIsaac</h2>
-          </header>
-          <h3>If I have seen further it is by standing on the shoulders of giants</h3>
-          <footer>
-            <h4>10 days ago</h4>
-            <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-      </container>
+      <div id="tweets-container">
+
+      </div>
     </main>
   </body>
 </html>

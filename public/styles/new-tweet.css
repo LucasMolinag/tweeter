@@ -30,13 +30,13 @@ button{
   color: red;
 }
 
-.container{
+main {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-textarea{
+textarea {
   background-color: #f4f1ec;
   border-style: solid;
   border-top-color: #f4f1ec;
@@ -49,4 +49,11 @@ textarea{
 
 section {
   margin-bottom: 3em;
+  width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  section{
+  width: 90%;
+  }
 }
