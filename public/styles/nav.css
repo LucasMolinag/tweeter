@@ -5,11 +5,13 @@ nav {
   background-color: #54b0b3;
   background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
   color: #FFFFFF;
+  /* 120px for height is needlessly big and does not look as good as 60px. I opted for the latter */
   height: 60px;
   width: 100%;
   padding-left: 1.5em;
   padding-right: 1.5em;
   position: fixed;
+  z-index: 100;
  }
 
 span {

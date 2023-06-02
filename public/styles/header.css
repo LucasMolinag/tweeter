@@ -1,5 +1,6 @@
 .user-header {
     display: flex;
+    /* Did not fit appropriately at 400px, 800px fit better into the layout */
     height: 800px;
     width: 100%;
     background-color: #54b0b3;
