@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+- Home page on computer screens (higher than 1024px) - https://raw.githubusercontent.com/LucasMolinag/tweeter/master/public/images/home-page%20.PNG
+- Home page on Mobile screens (lower than 1024px) - https://raw.githubusercontent.com/LucasMolinag/tweeter/master/public/images/home-page-phone.PNG
+- Error prompt on computer screen - https://raw.githubusercontent.com/LucasMolinag/tweeter/master/public/images/error-computer.PNG
