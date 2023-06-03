@@ -4,7 +4,7 @@ Style header element to space and align it, and to set an image and background c
 .user-header {
     display: flex;
     /* Did not fit appropriately at 400px, 800px fit better into the layout */
-    height: 800px;
+    height: 700px;
     width: 100%;
     background-color: #54b0b3;
     background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
@@ -45,7 +45,7 @@ Space avatar image
 }
 
 /*
-Remove background image and colour from specific places when in a computer screen of at least 1024px
+Remove background image and colour from specific places when in a computer screen of at least 1024
 */
 @media screen and (min-width: 1024px) {
   .user-header {
