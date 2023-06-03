@@ -1,3 +1,6 @@
+/*
+Style header element to space and align it, and to set an image and background colour
+*/
 .user-header {
     display: flex;
     /* Did not fit appropriately at 400px, 800px fit better into the layout */
@@ -10,31 +13,40 @@
     align-items: center;
 }
 
+/*
+Align user avatar
+*/
 img {
   display: flex;
   align-items: center;
 }
 
-.tweeted-user {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/*
+Space user name and avatar from handle in article element
+*/
 .tweet-header {
   display: flex;
   justify-content: space-between;
 }
 
+/*
+Align user name , avatar and handle
+*/
 .profile {
   display: flex;
   align-items: center;
 }
 
+/*
+Space avatar image
+*/
 .avatar {
   margin-right: 10px;
 }
 
+/*
+Remove background image and colour from specific places when in a computer screen of at least 1024px
+*/
 @media screen and (min-width: 1024px) {
   .user-header {
     background-color: #f4f1ec;

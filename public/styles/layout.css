@@ -24,10 +24,16 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+ /*
+ Default fonts
+ */
 body {
   font-family: Source Sans Pro, sans-serif;
 }
 
+/*
+Create a flexible and centered layout with a background colour for the main element 
+*/
 main {
   display: flex;
   /* 100% width main looked better, the elements within it are 90% width so they never touch the borders */
@@ -36,6 +42,9 @@ main {
   background-color: #f4f1ec;
 }
 
+/*
+Create a border around the article elements, add padding to create space between the content and the borders, and add margin to create space between each article element (tweet)
+*/
 article {
   border-style: solid;
   border-color: black;
@@ -47,19 +56,30 @@ article {
   margin-bottom: 1em;
 }
 
+/*
+Show a shadow when a tweet is hovered over
+*/
 article:hover {
   box-shadow: 10px 10px 5px grey;
 }
 
+/*
+Format h1 ($name)
+*/
 h1 {
   font-size: 24px;
   font-weight: 600;
 }
-
+/*
+Format h2 (user name in #name-container)
+*/
 h2 {
   color: white;
 }
 
+/*
+Format h3 ($content)
+*/
 h3 {
   border-style: solid;
   border-top-color: #f4f1ec;
@@ -70,16 +90,25 @@ h3 {
   margin: 0;
 }
 
+/*
+Format h4 ($timestamp)
+*/
 h4 {
   font-size: 15px;
   font-weight: bold;
 }
 
+/*
+Format h5 ($handle)
+*/
 h5 {
   font-size: 24px;
   color: grey;
 }
 
+/*
+Format h6 (error text) to make it coloured and properly spaced
+*/
 h6 {
   font-size: 24px;
   color: white;
@@ -87,42 +116,66 @@ h6 {
   background-color: red;
 }
 
+/*
+Format error-container to make the content centered
+*/
 .error-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
+/*
+Format the footer to space out the elements within it properly
+*/
 footer {
   display: flex;
   justify-content: space-between;  
   align-items: center;
 }
 
+/*
+Slightly space out the icons in the tweet footer
+*/
 i {
   margin-left: 5px;
 }
 
+/*
+Change colour of icons when hovered over
+*/
 i:hover {
   color: orange;
 }
 
+/*
+Properly spaces label from the element above
+*/
 label {
   margin-top: 20px;
 }
 
+/*
+Reverse tweet order chronologically and prevent the element from touching the borders of the page
+*/
 #tweets-container {
   display: flex;
   flex-direction: column-reverse;
   width: 90%;
 }
 
+/*
+Flex body element and display it in a column
+*/
 body {
   display: flex;
   flex-direction: column;
 }
 
+/*
+Change website format to two columns along with different positioning of elements to better fit computer screen sizes above 1024px
+*/
 @media screen and (min-width: 1024px) {
   body{
     flex-direction: row;

@@ -1,3 +1,6 @@
+/*
+Style nav bar and elements inside it. Fixes it at z-index: 100 to make it always appear on top of everything else
+*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -14,11 +17,17 @@ nav {
   z-index: 100;
  }
 
+/*
+Style website logo
+*/
 span {
   font-family: Bungee;
   line-height: 60px;
 }
 
+/*
+Style text at the right of the nav bar
+*/
 a {
   display: flex;
   font-family: Source Sans Pro;
@@ -26,16 +35,25 @@ a {
   justify-content: flex-end;
 }
 
+/*
+Style icon at the right of the nav bar
+*/
 .icon {
   color:red;
   margin: 0;
 }
 
+/*
+Center icon at the bottom of the text at the right of the nav bar
+*/
 .icon-container {
   display: flex;
   justify-content: center;
 }
 
+/*
+Style nav bar to have its own colour when on computer screens above 1024px
+*/
 @media screen and (min-width: 1024px) {
   nav {
     background-color: #4056A1;

@@ -1,31 +1,49 @@
+/*
+Flex form and set direction to column
+*/
 form {
   display: flex;
   flex-direction: column;
 }
 
+/*
+Separate the submit button and the character counter and display them in a row
+*/
 .tweet-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/*
+Style label
+*/
 label {
   font-family: Source Sans Pro, sans-serif;
   font-size: 30px;
 }
 
-button{
+/*
+Style button
+*/
+button {
   display: flex;
   color: white;
   background-color: #4056A1;
   font-family: "bungee";
 }
 
-.counter{
+/*
+Style counter
+*/
+.counter {
   font-family: "bungee";
   display: flex;
 }
 
+/*
+Style counter when invalid criteria is met
+*/
 .counter.invalid {
   color: red;
 }
@@ -36,6 +54,9 @@ main {
   flex-direction: column;
 }
 
+/*
+Style, space and apply unique border at the bottom of textarea
+*/
 textarea {
   background-color: #f4f1ec;
   border-style: solid;
@@ -45,13 +66,20 @@ textarea {
   border-left-color: #f4f1ec;
   border-bottom-width: 3px ;
   margin-bottom: 0.5em;
+  height: 1.5em;
 }
 
+/*
+Space section properly
+*/
 section {
   margin-bottom: 3em;
   width: 90%;
 }
 
+/*
+Change section slightly to better fit a coputer screen when above 1024px
+*/
 @media screen and (min-width: 1024px) {
   section{
   width: 90%;
