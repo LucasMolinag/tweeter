@@ -55,9 +55,10 @@ main {
 }
 
 /*
-Style, space and apply unique border at the bottom of textarea
+Style, space and apply unique border at the bottom of textarea - NEED TO WRAP
 */
 textarea {
+  display: flex;
   background-color: #f4f1ec;
   border-style: solid;
   border-top-color: #f4f1ec;
