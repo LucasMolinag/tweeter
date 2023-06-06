@@ -24,6 +24,9 @@ Render tweets and appends them to one another
 const renderTweets = function(tweets) {
   const $tweetsContainer = $('#tweets-container');
 
+  //Clear tweets container - avoid double rendering
+  $tweetsContainer.empty();
+
   for (i = 0; i < tweets.length; i++) {
     const $tweetElement = createTweetElement(tweets[i]);
     $tweetsContainer.append($tweetElement);
@@ -63,8 +66,6 @@ const createTweetElement = function(tweet) {
 Render initial tweet - declared at the top of client.js
 */
 $(document).ready(function() {
-
-  renderTweets(initialTweets);
 
   /*
 Prevent default function of the submit event when error conditions are met
@@ -107,7 +108,6 @@ Prevent default function of the submit event when error conditions are met
     */
     $.post("/tweets", formData)
       .then(function(response) {
-
         $tweetText.val("");
         setCharactersCounter($tweetText);
         loadTweets();
@@ -123,6 +123,11 @@ Prevent default function of the submit event when error conditions are met
     $.getJSON("/tweets")
       .then(function(tweets) {
         renderTweets(tweets);
+      })
+      .catch(function(error) {
+        console.log("Error:", error);
+        // Display a custom error message to the user
+        showError("Something went wrong. Please try again");
       });
   };
 
@@ -133,6 +138,13 @@ Prevent default function of the submit event when error conditions are met
     $(this).css(`height`, this.scrollHeight + "px");
   });
 
+  /*
+  Sets the size back to default on submission
+  */
+  $('form').submit(function() {
+    $(".new-tweet textarea").css(`height`, "1.5em");
+  });
+  
   /*
   Load tweets when page initially loads
   */
